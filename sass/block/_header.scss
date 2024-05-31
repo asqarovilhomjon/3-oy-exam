@@ -1,0 +1,48 @@
+.header{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        margin-top: 20px;
+        display: flex;
+        gap: 40px;
+        .logo__center{
+        width: 1px;
+        height: 48px;
+        border: 1px solid #E6E8EC;
+        }
+    }
+    &__collection{
+        display: flex;
+        align-items: center;
+    
+        gap: 24px;
+        .navbar__item{
+            font-size: 14px;
+            font-weight: 700;
+            color: #777E90;
+            cursor: pointer;
+            transition: .5s;
+            &:hover{
+                transform: scale(1.03);
+                color: #565b67;
+            }
+        }
+        .item__add{
+            display: flex;
+            gap: 12px;
+        }
+        .navbar__img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .navbar__btn{
+        button{
+            @include btn()
+        }
+    }
+
+}

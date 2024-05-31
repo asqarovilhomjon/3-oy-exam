@@ -1,0 +1,14 @@
+
+@mixin btn(){
+    padding: 8px 16px;
+    border: 1px solid #E6E8EC;
+    border-radius: 90px;
+    outline: none;
+    color: #23262F;
+    transition: .3s;
+    &:hover{
+        transform: scale(1.03);
+        background: #55c2da;
+        color: #fff;
+    }
+}
