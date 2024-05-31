@@ -11,4 +11,8 @@
         background: #55c2da;
         color: #fff;
     }
+    &:active{
+        transform: scale(.99);
+        background: #3659b0;
+    }
 }
