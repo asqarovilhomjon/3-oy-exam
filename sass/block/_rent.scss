@@ -1,26 +1,37 @@
-.rent {
-    margin-top: 70px;
-    .rent__imgsy{
-      display: none;
-    }
-    .rent__wrapper {
+.rent{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  .rent__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    .rent__text {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      .rent__text {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        b {
-          font-size: 50px;
-          font-weight: 900;
-        }
-        p {
-          color: gray;
-        }
+      flex-direction: column;        
+      .rent__top{
+        font-size: 12px;
+        font-weight: 700;
+        color: #777E90;
+        text-transform: uppercase;
+        margin-top: 16px;
+      }
+      .rent__title{
+        max-width: 440px;
+        font-size: 48px;
+        font-weight: 700;
+        color: #23262F;
+        margin-bottom: 32px;
+      }
+      .rent__main{
+        max-width: 400px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #777E90;
+        margin-bottom: 40px;
       }
     }
-    .rent__inp {
+    .rent__input {
       width: 280px;
       display: flex;
       align-items: center;
@@ -32,13 +43,21 @@
         align-items: center;
         gap: 60px;
         input {
+          padding: 0 12px;
+          width: 100%;
           border: none;
           outline: none;
         }
       }
     }
   }
-  @media(max-width:1000px){
+  .rent__img{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+  }
+}
+@media(max-width:950px){
   .rent {
     margin-top: 70px;
     .rent__wrapper {
@@ -78,7 +97,7 @@
     }
   }
   }
-  @media(max-width:680px){
+  @media(max-width:400px){
   .rent {
     margin-top: 70px;
     .rent__wrapper {
@@ -86,16 +105,16 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      .rent__text {
+      .rent__text{
         display: flex;
         flex-direction: column;
         gap: 30px;
-        b {
+        .rent__title{
           font-size: 50px;
           font-weight: 900;
         }
-        p {
-          color: gray;
+        .rent__top .rent main{
+          color: #777E90;
         }
       }
     }
