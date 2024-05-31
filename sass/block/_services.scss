@@ -97,29 +97,6 @@
         color: gray;
       }
     }
-    button{
-              width: 250px;
-              padding: 8px;
-              height: 36px;
-              text-transform: uppercase;
-              text-decoration: none;
-              background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-              background-size: 400%;
-              border-radius: 30px;
-              color: #ffff;
-              &:hover{
-                  animation: animate 8s linear infinite;
-              }
-              @keyframes animate{
-                  0%{
-                      background-position: 0%;
-                  }
-                  100%{
-                      background-position:400%;
-                  }
-              }
-              
-          }
     .services__box {
       width: 100%;
       margin-top: 80px;
