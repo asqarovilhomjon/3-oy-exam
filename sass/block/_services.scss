@@ -1,0 +1,131 @@
+.services {
+    margin: 0;
+    .services__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .services__top{
+            font-size: 12px;
+            font-weight: 700;
+            color: #777E90;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .services__sub{
+            font-size: 48px;
+            font-weight: 700;
+            color: #23262F;
+            margin-bottom: 32px;
+        }
+    }
+    button{
+        @include btn();
+        background: #3B71FE;
+        font-size: 16px;
+        border: none;
+        font-weight: 700;
+        color: #FCFCFD;
+    }
+    .services__box {
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        gap: 25px;
+        justify-content: space-between;
+        .services__card {
+            border-radius: 25px;
+            height: 300px;
+            width: 357px;
+            display: flex;
+            flex-direction: column;
+            background: #F4F5F6;
+            .box__card__img{
+                width: 48px;
+                height: 48px;
+                margin: 64px 0 32px 32px;
+            }
+            .services__text{
+                margin-left: 32px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #23262F;
+                margin-bottom: 16px;
+            }
+            .services__content{
+                max-width: 290px;
+                margin: auto;
+                margin-bottom: 65px;
+                font-size: 14px;
+                color: #777E90;
+            }
+        }
+    }
+}
+@media(max-width:950px){
+  .services {
+    margin-top: 70px;
+    .services__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      flex-direction: column;
+      b {
+        font-size: 48px;
+        font-weight: 650;
+      }
+      p {
+        color: gray;
+      }
+    }
+    button{
+              width: 250px;
+              padding: 8px;
+              height: 36px;
+              text-transform: uppercase;
+              text-decoration: none;
+              background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+              background-size: 400%;
+              border-radius: 30px;
+              color: #ffff;
+              &:hover{
+                  animation: animate 8s linear infinite;
+              }
+              @keyframes animate{
+                  0%{
+                      background-position: 0%;
+                  }
+                  100%{
+                      background-position:400%;
+                  }
+              }
+              
+          }
+    .services__box {
+      width: 100%;
+      margin-top: 80px;
+      display: flex;
+      gap: 25px;
+      justify-content: space-between;
+      overflow: auto;
+      flex-direction: column;
+      .services__card {
+        margin: auto;
+          border-radius: 25px;
+        width: 357px;
+        height: 300px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        background: rgb(243, 240, 240);
+        b {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  }
+  
