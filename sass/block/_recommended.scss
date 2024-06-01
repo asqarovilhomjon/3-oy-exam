@@ -1,6 +1,6 @@
 .recommended {
     margin-top: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 136px;
     .recommended__wrapper {
         display: flex;
         flex-direction: column;
@@ -53,6 +53,21 @@
             strong{
                 font-weight: 900;
             }
+        }
+    }
+    .recommended__show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .recommended__show__wrap {
+           display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            cursor: pointer;
+            border-radius: 50%;
+            border: 1px solid #777E90;
+          }
         }
     }
 }

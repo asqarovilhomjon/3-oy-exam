@@ -1,0 +1,117 @@
+.footer{
+    border-top: 1px solid #E6E8EC;
+    .footer__wrap{
+        margin: 80px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .footer__collection__top{
+            display: flex;
+            gap: 130px;
+            line-height: 2;
+            .footer__item{
+                font-size: 14px;
+                font-weight: 700;
+                color: #777E90;
+                &:hover{
+                    color: #4b4f5a;
+                }
+            }
+        }
+        .footer__collection__bottom{
+            display: flex;
+            gap: 130px;
+            line-height: 2;
+            .footer__item{
+                font-size: 14px;
+                font-weight: 700;
+                color: #777E90;
+                &:hover{
+                    color: #4b4f5a;
+                }
+            }
+        }
+        .rent__inp{
+            width: 220px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #E6E8EC;
+            border-radius: 25px;
+            padding: 5px 10px;
+            form{
+                display: flex;
+                align-items: center;            
+            input {
+                border: none;
+                outline: none;
+            }
+            .footer__img{
+                transition: .5s;
+                &:hover{
+                    transform: scale(1.03);
+                }
+                &:active{
+                    transform: scale(.9);
+                    color: #243b75;
+                }
+            }
+            }
+        }
+    }
+    .footer__bottom{
+        font-size: 12px;
+        font-weight: 400;
+        color: #23262F;
+        padding: 24px 0;
+        border-top: 1px solid #E6E8EC;
+    }
+}
+@media(max-width:950px){
+.footer{
+    margin-top: 100px;
+    border-top: 1px solid #E6E8EC;
+    
+    .rent__inp {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E6E8EC;
+    border-radius: 25px;
+    padding: 5px 10px;
+    form {
+      display: flex;
+      align-items: center;
+      
+      input {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  .footer__wrap{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    .footer__collection{
+        display: none;
+        line-height: 2;
+        .footer__item{
+            &:hover{
+                color: #4b4f5a;
+            }
+        }
+    }
+    .footer__collection{
+        display: block;
+         line-height: 2;
+        .footer__item{
+            &:hover{
+                color: #4b4f5a;
+            }
+        }
+    }
+  }
+}
+}
